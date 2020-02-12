@@ -1,0 +1,13 @@
+{% load static %}
+{% include 'index1.html' %}
+<form method='POST'>
+	<center>
+	<table class="table">
+		{{form.as_table}}
+	</table>
+	</center>
+	<center><input type='submit' value='Update Food'></center>
+	{% csrf_token %}
+	
+</form>
+{% include 'footer1.html'%}
